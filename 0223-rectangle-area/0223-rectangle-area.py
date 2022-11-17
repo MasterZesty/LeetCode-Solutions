@@ -6,6 +6,7 @@ class Solution:
         
         area_b = (bx2-bx1)*(by2-by1)
         
+        # better understand math behind algo : https://youtu.be/ICtwTFkvFHY
         
         w = (min(ax2,bx2)-max(ax1,bx1))
         b = (min(ay2,by2)-max(ay1,by1))
