@@ -1,0 +1,1 @@
+tried two approches frist O(n2) and second O(n) both the time TLE is there
