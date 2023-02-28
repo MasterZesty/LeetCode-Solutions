@@ -5,7 +5,43 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    
 
+#     global dict_subtree_freq
+#     dict_subtree_freq = {}
+    
+#     global ans
+#     ans = []
+    
+#     def dfs(self,root):
+          # for this soln ref https://youtu.be/Ya8LifGLUHc
+        
+#         if node is None:
+#             return '#'
+        
+#         s1 = ''
+#         s2 = ''
+#         curr = str(root.val)
+        
+#         if root.left is not None:
+#             s1 = self.dfs(root.left)
+        
+#         if root.right is not None:
+#             s2 = self.dfs(root.right)
+            
+#         t = curr + 'l' + s1 + 'r' + s2
+#         print(t)
+        
+#         if t not in dict_subtree_freq:
+#             dict_subtree_freq[t] = 1
+#         else:
+#             dict_subtree_freq[t] += 1
+        
+#         if dict_subtree_freq[t] == 2:
+#             ans.append(root)
+            
+#         return t
+    
     def findDuplicates(self, node, frequency, result):
         if node is None:
             return "#"
@@ -24,6 +60,9 @@ class Solution:
         
     
     def findDuplicateSubtrees(self, root: Optional[TreeNode]) -> List[Optional[TreeNode]]:
+        
+        # dfs(root)
+        # return ans
     
         frequency = {}
         result = []
