@@ -26,7 +26,9 @@ class Solution:
         
 #         return t
 
-          #Approch 2 : can be solved using binary serarch
+         #Approch 2 : can be solved using binary serarch
+         # time complexity - O(nlogn)
+        
         def time_possible(mid,time,totalTrips):
             trips= 0
             for i,val in enumerate(time):
