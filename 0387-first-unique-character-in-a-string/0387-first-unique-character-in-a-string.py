@@ -18,3 +18,6 @@ class Solution:
                 return i
             
         return -1
+        
+        # time complexity - O(n+n) => O(2n) => O(n)
+        # space complexity - O(n) => space complexity of HashMap is O(n).
