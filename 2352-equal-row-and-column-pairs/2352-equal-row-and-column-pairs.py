@@ -1,6 +1,6 @@
 class Solution:
     def equalPairs(self, grid: List[List[int]]) -> int:
-          # Approch 1
+        # Approch 1 - Success
         # construct cols array
         cols = []
         n = len(grid)
