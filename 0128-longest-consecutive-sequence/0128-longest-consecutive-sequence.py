@@ -14,7 +14,7 @@ class Solution:
         for i,val in enumerate(nums):
             #first check if given no forms starting 
             #of a subsequnce
-            if (val-1) not in present_hm.keys():
+            if (val-1) not in present_hm.keys() and val not in checked_hm.keys():
                 #it is start of sequnce
                 checked_hm[val] = True
                 flag = True
