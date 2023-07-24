@@ -13,7 +13,7 @@ class Solution:
             else:
                 hmap[word] += 1
                 
-        print(hmap)
+        # print(hmap)
         
         ans = 0
         flag = True
