@@ -33,7 +33,7 @@ class Solution:
                     
             # case 2 s[0] == s[1]
             if s[0] == s[1]:
-                print(ans)
+                # print(ans)
                 t = hmap.get(s,0)
                 if t != 0:
                     if t%2 == 0: # EVEN
@@ -47,5 +47,5 @@ class Solution:
                         else:
                             ans += (t-1)*2
                     del hmap[s]
-        print(hmap,flag)        
+        # print(hmap,flag)        
         return ans
