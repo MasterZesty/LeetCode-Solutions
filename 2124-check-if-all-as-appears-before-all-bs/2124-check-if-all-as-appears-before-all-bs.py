@@ -15,7 +15,7 @@ class Solution:
             
             # detect second jump point i.e. jump from b to a
             if prev_char!= s[i] and temp_flag == True:
-                print(f'detected second jump')
+                #print(f'detected second jump')
                 if prev_char == 'b' and s[i] == 'a':
                     temp_flag = False
                     break
@@ -25,7 +25,7 @@ class Solution:
             
             # detect first chnage point i.e. jump from a to b not b to a
             if prev_char != s[i] and temp_flag == False:
-                print(f'detected first jump {s[i]}')
+                #print(f'detected first jump {s[i]}')
                 if prev_char == 'a' and s[i] == 'b':
                     temp_flag = True
                     prev_char = s[i]
@@ -42,7 +42,7 @@ class Solution:
                 
             
             
-        print(f'temp_flag {temp_flag}')
+        #print(f'temp_flag {temp_flag}')
         
         
         return temp_flag
