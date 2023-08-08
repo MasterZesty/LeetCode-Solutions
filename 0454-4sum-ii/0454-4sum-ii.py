@@ -42,15 +42,14 @@ class Solution:
             for j in range(len(nums2)):
                 
                 hm[nums1[i]+nums2[j]] = hm.get(nums1[i]+nums2[j],0) + 1
+        
         #print(f'hashmap of arr1 and arr2 : {hm}')        
         
         for k in range(len(nums3)):
             
             for l in range(len(nums4)):
-                
-                #print(f'nums3[k]+nums4[l] : {nums3[k]+nums4[l]}')
+
                 if hm.get(-(nums3[k]+nums4[l]),0) != 0:
-                    #print('adding ' , hm.get(-(nums3[k]+nums4[l]),0))
                     ans += hm.get(-(nums3[k]+nums4[l]),0)
         
                             
