@@ -1,5 +1,6 @@
 class Solution:
     def reorganizeString(self, s: str) -> str:
+        # refrred from : https://leetcode.com/problems/reorganize-string/discuss/3948675/Detailed-C%2B%2B-Solution-or-O(N)-or-Without-Heap-or-Beats-100-in-Time
         
         def swap(arr, i, j):
             arr[i], arr[j] = arr[j], arr[i]
@@ -54,13 +55,12 @@ class Solution:
 
                 if s[i] == s[j]:
                     i = j
-                    while j<=n and s[i]==s[j]:
+                    while s[i]==s[j]:
+                        
                         j += 1
+                        
                         if j == n:
                             return ""
-
-                    if j == n:
-                        return ""
                     
                     swap(s,i,j)
 
