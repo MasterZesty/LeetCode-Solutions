@@ -8,7 +8,7 @@ class Solution:
         if stones[1]>1:
             return False
         
-        @cache
+        @cache #hell yeah recursion babyy
         def jumper(curr_pos, k):
             print(f'curr_pos {curr_pos} | k {k}')
 
