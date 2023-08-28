@@ -13,6 +13,7 @@ class Solution:
         if n == 1:
             return [x for x in  hm[digits]]
         
+        # ref : https://stackoverflow.com/questions/798854/all-combinations-of-a-list-of-lists
         def combine(terms, accum):
             
             last = (len(terms) == 1)
