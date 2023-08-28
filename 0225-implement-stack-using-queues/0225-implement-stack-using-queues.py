@@ -33,6 +33,17 @@ class MyStack:
             return False
         
         return True
+    
+    
+# approch 2: if we want to implement 2 queue
+# With two queue
+#     Push: To push an element, the code transfers all elements from q1 to q2 to maintain order. Then, the new element is enqueued into q1, and finally, elements are transferred back from q2 to q1.
+
+#     Pop: The front element of q1 is dequeued and returned, simulating the pop operation of a stack.
+
+#     Top: The front element of q1 is returned without dequeuing it, representing the top of the stack.
+
+#     Empty: The stack is considered empty if q1 is empty.
         
 
 
