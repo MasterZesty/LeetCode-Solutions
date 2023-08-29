@@ -3,6 +3,7 @@ class Solution:
         
         '''
         # approch 1 : brute force TC : O(n) SC:O(1)
+        # correction : The time complexity is O(n^2) due to the two functions count_loss_shop_closed and count_loss_shop_open. For each closing hour 'i', these functions perform           # string slicing and then call the count method on the sliced strings. The count method itself takes O(m) time, where 'm' is the length of the sliced string. Since you are         # calling these functions inside a loop that runs 'n' times, the total time complexity becomes O(n^2).
         
         def count_loss_shop_closed(closing_hour):
             # penalty when the shop is closed at jth hour
@@ -29,6 +30,9 @@ class Solution:
                     
         return min_hour
         '''
+        
+        
+        # approch 2 : TC: O(n)
         # ref: https://leetcode.com/problems/minimum-penalty-for-a-shop/discuss/3974425/95-faster-oror-Java-oror-C%2B%2B-oror-Easy-to-undersatnd-oror-Simple
         max_score = score = 0
         best_hour = -1
@@ -40,3 +44,6 @@ class Solution:
                 
         return best_hour + 1
         
+        
+        
+        # approch 3 : convert apporch 1 to O(n)
