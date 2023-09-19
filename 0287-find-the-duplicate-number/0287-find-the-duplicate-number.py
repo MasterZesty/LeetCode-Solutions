@@ -1,6 +1,6 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        
+        # TC O(n) SC O(n) and this will be constant as max keys in hmap will be n and min 1 
         hmap = {}
         
         for i in nums:
