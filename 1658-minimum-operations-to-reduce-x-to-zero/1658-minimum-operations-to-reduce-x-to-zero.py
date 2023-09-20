@@ -12,10 +12,16 @@ class Solution:
         
         ref here : https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/discuss/4066508/C%2B%2BEasy-solution-with-explanation-in-O(N)-time-complexity
         """
-        """
+        
         n = len(nums)
         total_sum = sum(nums)
         k = total_sum - x
+        
+        if total_sum < x:
+            return -1
+        
+        if total_sum == x:
+            return n
         
         curr_sum = 0
         max_length = -1
@@ -26,8 +32,8 @@ class Solution:
             curr_sum += nums[right]
             
             while (left <= right and curr_sum > k):
-                left += 1
                 curr_sum -= nums[left]
+                left += 1
             
             if curr_sum == k :
                 max_length = max(max_length, right - left + 1)
@@ -39,8 +45,8 @@ class Solution:
             return -1
         
         return n - max_length
+        
         """
-
         n = len(nums)
         i = 0
         j = 0
@@ -68,6 +74,7 @@ class Solution:
             j += 1
 
         return n - maxi if maxi != 0 else -1
+        """
 
 
 
