@@ -2,6 +2,7 @@ class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         
         # TC O(m+n) SC (m+n) O(1)
+        # use merge sort kind of : ref : https://www.interviewbit.com/blog/merge-two-sorted-arrays/
         
         m = len(nums1)
         n = len(nums2)
