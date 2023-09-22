@@ -23,6 +23,7 @@ class Solution:
         return max_area
         '''
         
+        # approch 2 : The two-pointer approach  reduce the time complexity to O(n).
         max_area = 0
         left = 0
         right = len(height) - 1
