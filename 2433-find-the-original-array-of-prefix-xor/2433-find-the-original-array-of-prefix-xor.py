@@ -12,7 +12,7 @@ class Solution:
             arr[i] = pref[i-1] ^ pref[i]
             
             
-        print(f'ans : {arr}')
+        #print(f'ans : {arr}')
         
         return arr
         
