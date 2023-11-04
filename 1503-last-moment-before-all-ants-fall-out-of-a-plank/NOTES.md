@@ -1,10 +1,7 @@
 ## try to come up with brute force solution to this
 ​
-Input
-20
-[4,7,15]
-[9,3,13,10]
-Output
-15
-Expected
-17
+* yes yes we solved it boyyyy
+*
+* just think through it and you will get the logic.
+*
+* use pen and paper for it
