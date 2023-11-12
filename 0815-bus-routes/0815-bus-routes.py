@@ -1,5 +1,16 @@
 class Solution(object):
     def numBusesToDestination(self, routes, source, target):
+        # ref :https://leetcode.com/problems/bus-routes/discuss/4277892/Beats-100-Explained-With-Video-Modified-Bellman-Ford-Visualized-Too
+        # TC : 
+        '''
+        Complexity
+Time Complexity:
+
+The outer loop runs until no more updates can be made, and in each iteration, we iterate through all routes. Therefore, the time complexity is O(n * m), where n is the number of routes and m is the average number of stops in a route.
+Space Complexity:
+
+The space complexity is O(maxStop), where maxStop is the maximum bus stop number in any route, as we use an array minBusesToReach of this size
+'''
         if source == target:
             return 0
 
