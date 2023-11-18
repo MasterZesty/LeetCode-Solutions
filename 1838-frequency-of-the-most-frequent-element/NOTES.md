@@ -14,3 +14,4 @@
 ​
 ​
 https://leetcode.com/problems/frequency-of-the-most-frequent-element/discuss/4300895/VideoGive-me-10-minutes-How-we-think-about-a-solution
+best video logic explained : https://youtu.be/MbCFzt4v1uE?si=ZoFUcdMeZLnljLVT
