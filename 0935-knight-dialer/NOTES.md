@@ -1,1 +1,9 @@
+https://leetcode.com/problems/knight-dialer/discuss/4333729/DP-with-Memoization-Solution-(Beginner-Friendly)-in-C%2B%2B-Java-and-Python
 ​
+https://leetcode.com/problems/knight-dialer/discuss/4333597/Simple-Solution-oror-Beginner-Friendly-oror-Easy-to-Understand
+​
+https://leetcode.com/problems/knight-dialer/discuss/4333942/Easy-Iterative-Approach-oror-Explained-Intuition
+​
+https://leetcode.com/problems/knight-dialer/discuss/4334011/DP-Tabulation-Method-Beats-90-solutions-Easy-to-Understand
+​
+https://leetcode.com/problems/knight-dialer/discuss/4334066/Beats-101-935.-Knight-Dialer
