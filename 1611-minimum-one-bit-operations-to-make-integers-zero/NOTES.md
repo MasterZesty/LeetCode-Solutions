@@ -14,6 +14,17 @@ class Solution:
         return ans
 ```
 
+```python
+class Solution:
+    def minimumOneBitOperations(self, n: int) -> int:
+        
+        ans=0
+        while n:
+            ans=-ans-(n^(n-1))
+            n&=n-1
+        return abs(ans)  
+```
+
 * https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/discuss/4345259/Easy-Video-Explanation-with-logic-building-and-Proofs-oror-Bit-Manipulation
 
 * https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/discuss/4344637/C%2B%2B-or-PYTHON-or-JAVA-oror-EXPLAINED-oror
