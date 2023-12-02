@@ -9,7 +9,7 @@ class Solution:
         for c in chars:
             chars_hm[c] = chars_hm.get(c,0) + 1
             
-        print(f"freqency hm of chars {chars_hm}")
+        # print(f"freqency hm of chars {chars_hm}")
         
         
         sum_len_good_s = 0
@@ -42,7 +42,7 @@ class Solution:
                     
             if is_good_s:
                 sum_len_good_s += len(word)
-                print(f"good string: {word} | temp_hm: {temp_hm}")
+                # print(f"good string: {word} | temp_hm: {temp_hm}")
                 
             
         return sum_len_good_s
