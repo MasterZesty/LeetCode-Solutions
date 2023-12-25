@@ -5,7 +5,7 @@ class Solution:
             if not encoded_s:
                 return 1
             
-            if encoded_s in memo:
+            if memo.get(encoded_s,-1) != -1:
                 return memo[encoded_s]
             
             ways = 0
