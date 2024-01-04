@@ -9,7 +9,7 @@ class Solution:
         
         for r in range(row):
             
-            no_of_lasers = sum( map(int,list(bank[r]) ) )
+            no_of_lasers = bank[r].count('1')
             # print(f"no_of_lasers : {no_of_lasers} in ith row {r}")
             
             if no_of_lasers != 0:
