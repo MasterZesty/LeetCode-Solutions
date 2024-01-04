@@ -3,9 +3,9 @@ class Solution:
         
         row = len(bank)
         
-        laser = []
-        
         ans = 0
+        
+        flag = True
         
         for r in range(row):
             
@@ -13,10 +13,10 @@ class Solution:
             # print(f"no_of_lasers : {no_of_lasers} in ith row {r}")
             
             if no_of_lasers != 0:
-                laser.append(no_of_lasers)
                 
-                if len(laser) < 2:
+                if flag:
                     prev_no_of_lasers = no_of_lasers
+                    flag = False
                     continue
                 
                 ans += ( prev_no_of_lasers * no_of_lasers )
