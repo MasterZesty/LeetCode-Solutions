@@ -2,9 +2,7 @@ class Solution:
     def numberOfBeams(self, bank: List[str]) -> int:
         
         row = len(bank)
-        
         ans = 0
-        
         flag = True
         
         for r in range(row):
