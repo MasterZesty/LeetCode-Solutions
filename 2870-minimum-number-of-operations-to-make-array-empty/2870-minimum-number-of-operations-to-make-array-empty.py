@@ -30,7 +30,7 @@ class Solution:
             if num_in_group%3 == 0:
                 min_ops_i = min( (num_in_group)//3, min_ops_i)
                 
-            print(f"nums[i] : {nums[i]} of num_in_group : {num_in_group} for min_ops_i : {min_ops_i}")
+            # print(f"nums[i] : {nums[i]} of num_in_group : {num_in_group} for min_ops_i : {min_ops_i}")
             min_ops += min_ops_i
             
             i += 1
