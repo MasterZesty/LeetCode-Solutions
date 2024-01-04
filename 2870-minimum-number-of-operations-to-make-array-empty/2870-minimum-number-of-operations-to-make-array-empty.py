@@ -35,7 +35,7 @@ class Solution:
             
             i += 1
             
-        print(f"arr: {nums}")
+        # print(f"arr: {nums}")
         
         return min_ops
             
