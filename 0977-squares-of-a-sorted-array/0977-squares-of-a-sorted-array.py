@@ -31,7 +31,7 @@ class Solution:
         '''
         
         '''
-        Approach 3 : two pointer method
+        Approach 3 : two pointer method TC - O(n) SC - O(n)
         '''
         l = 0
         r = n - 1
