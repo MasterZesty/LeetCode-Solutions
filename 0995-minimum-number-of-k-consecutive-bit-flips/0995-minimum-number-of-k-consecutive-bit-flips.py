@@ -28,10 +28,9 @@ class Solution:
         
         # Aproch 2:
         '''
-        ref - https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/discuss/238538/Python-O(n)-using-queue-and-how-to-get-rid-of-the-queue
-        2. https://youtu.be/Y6ZrtZgmwRg?si=e9y1w073MEEvAlWh
+        ref - https://youtu.be/Y6ZrtZgmwRg?si=e9y1w073MEEvAlWh
         '''
-        
+        ''''
         n = len(nums)
         flips = 0
         
@@ -58,3 +57,26 @@ class Solution:
                 
         
         return flips
+        '''
+        # Aproch 3
+        '''
+        ref - https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/discuss/238538/Python-O(n)-using-queue-and-how-to-get-rid-of-the-queue
+        '''
+        
+        from collections import deque
+        
+        q = deque()
+        res = 0
+        for i in range(len(nums)):
+        
+            if len(q) % 2 != 0:
+                if nums[i] == 1:
+                    res += 1
+                    q.append(i+k-1)
+            else:
+                if nums[i] == 0:
+                    res += 1
+                    q.append(i+k-1)
+            if q and q[0] == i: q.popleft()
+            if q and q[-1] >= len(nums): return -1
+        return res
