@@ -1,5 +1,8 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
+        '''
+        ref - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/discuss/158940/Beat-100%3A-Very-Simple-(Python)-Very-Detailed-Explanation
+        '''
         n = len(nums)
         left = 0
         right = n - 1
