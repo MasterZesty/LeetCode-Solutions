@@ -25,6 +25,7 @@ class Solution:
         
         '''
         Approch 2: reduce tc somehow - 2 pointer method
+        for other soln refer - https://leetcode.com/problems/maximum-width-ramp/discuss/265765/Detailed-Explaination-of-all-the-three-approaches
         TC : O(n)
         '''
         
