@@ -24,5 +24,5 @@ class Solution:
                 nums[i] = 2
                 hm[2] = hm.get(2, 0) - 1
 
-            print(nums)
+            # print(nums)
         
