@@ -6,7 +6,7 @@ emp.name as emp_name,
 emp.salary as emp_sal,
 mgr.salary as mgr_sal
 from employee emp
-left join employee mgr
+inner join employee mgr
 on emp.managerid = mgr.id
 )
 
