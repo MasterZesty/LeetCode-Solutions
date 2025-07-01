@@ -1,50 +1,18 @@
-# Write your MySQL query statement below
-with cte as 
-(
-select
-a.user_id,
-b.name,
-count(movie_id) as no_of_movies
-from
-MovieRating a
-left join Users b
-on a.user_id = b.user_id
-group by
-user_id
-)
+-- Top user by number of ratings
+(SELECT u.name AS results
+ FROM MovieRating mr
+ JOIN Users u ON mr.user_id = u.user_id
+ GROUP BY mr.user_id
+ ORDER BY COUNT(mr.movie_id) DESC, u.name ASC
+ LIMIT 1)
 
-, cte2 as 
-(
-select
-name,
-row_number() over(order by no_of_movies desc, name asc) as rnk
-from
-cte
-)
+UNION ALL
 
-
-, cte3 as (
-select
-a.movie_id,
-b.title,
-avg(rating) as avg_rating
-from movierating a
-inner join movies b
-on a.movie_id = b.movie_id and a.created_at between "2020-02-01" and "2020-02-29"
-group by
-a.movie_id
-)
-
-, cte4 as 
-(
-select
-title,
-avg_rating,
-row_number() over(order by avg_rating desc, title asc) as rnk
-from
-cte3
-)
-
-select name as results from cte2 where rnk = 1
-union all
-select title as results from cte4 where rnk = 1
+-- Top movie by avg rating in Feb 2020
+(SELECT m.title AS results
+ FROM MovieRating mr
+ JOIN Movies m ON mr.movie_id = m.movie_id
+ WHERE mr.created_at BETWEEN '2020-02-01' AND '2020-02-29'
+ GROUP BY mr.movie_id
+ ORDER BY AVG(mr.rating) DESC, m.title ASC
+ LIMIT 1);
