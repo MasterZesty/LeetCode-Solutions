@@ -33,7 +33,7 @@ class Solution:
                 c_oe += 1
 
 
-        print([ans, c_odd, c_even, c_eo, c_oe])
+        # print([ans, c_odd, c_even, c_eo, c_oe])
         ans = max([ans, c_odd, c_even, c_eo, c_oe])
 
         return ans
