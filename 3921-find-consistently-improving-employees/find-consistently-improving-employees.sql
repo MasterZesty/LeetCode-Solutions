@@ -2,12 +2,13 @@
 with review_no as (
 select
 employee_id,
-NTH_VALUE(rating, 1) over(partition by employee_id order by review_date desc range between unbounded preceding and unbounded following) as latest_reviw_rating,
-NTH_VALUE(rating, 2) over(partition by employee_id order by review_date desc range between unbounded preceding and unbounded following) as second_latest_reviw_rating,
-NTH_VALUE(rating, 3) over(partition by employee_id order by review_date desc range between unbounded preceding and unbounded following) as third_latest_reviw_rating,
+NTH_VALUE(rating, 1) over w as latest_reviw_rating,
+NTH_VALUE(rating, 2) over w as second_latest_reviw_rating,
+NTH_VALUE(rating, 3) over w as third_latest_reviw_rating,
 row_number() over(partition by employee_id) as rn
 from
 performance_reviews
+window w as (partition by employee_id order by review_date desc range between unbounded preceding and unbounded following)
 )
 
 select
