@@ -3,15 +3,15 @@ class Solution:
         max_len = 0
         n = len(s)
 
-        for i in range(n):
+        for curr_index in range(n):
             char_count = {}
-            char_count[s[i]] = 1
+            char_count[s[curr_index]] = 1
             curr_max_len = 1
 
-            for j in range(i+1,n):
+            for next_index in range(curr_index+1,n):
 
-                char_count[s[j]] = char_count.get(s[j],0) + 1
-                if char_count[s[j]] > 1:
+                char_count[s[next_index]] = char_count.get(s[next_index],0) + 1
+                if char_count[s[next_index]] > 1:
                     break
                 else:
                     curr_max_len += 1
