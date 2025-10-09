@@ -11,14 +11,10 @@ class Solution:
             for j in range(i+1,n):
 
                 char_count[s[j]] = char_count.get(s[j],0) + 1
-                # print(f"chars: {s[i:j]} | {char_count}")
                 if char_count[s[j]] > 1:
-                    # print(f"chars: {s[i:j]} | {char_count}")
                     break
                 else:
                     curr_max_len += 1
-
-                # print(f"{i} {j} :curr_max_len: {curr_max_len}")
 
             max_len = max(max_len, curr_max_len)
 
