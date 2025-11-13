@@ -1,5 +1,10 @@
 class Solution:
     def maxOperations(self, s: str) -> int:
+        '''
+        Scan the string.
+        As we scan, count how many 1s we've seen so far (counted_ones).
+        Every time we start a new zero block (0 after 1), all previous 1s will cross it eventually -> so add counted_ones to the answer.
+        '''
         n = len(s)
         i = 0
         c_ones = 0
