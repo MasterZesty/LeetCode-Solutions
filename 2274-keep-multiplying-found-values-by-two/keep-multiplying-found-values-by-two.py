@@ -2,7 +2,9 @@ class Solution:
     def findFinalValue(self, nums: List[int], original: int) -> int:
         n = len(nums)
 
-        while original in nums:
+        s = set(nums)
+
+        while original in s:
             original *= 2
 
         return original
