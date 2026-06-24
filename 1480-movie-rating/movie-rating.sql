@@ -1,50 +1,36 @@
 # Write your MySQL query statement below
-with cte as 
-(
-select
-a.user_id,
-b.name,
-count(movie_id) as no_of_movies
-from
-MovieRating a
-left join Users b
-on a.user_id = b.user_id
-group by
-user_id
+WITH user_ranked AS (
+    SELECT
+        u.name,
+        ROW_NUMBER() OVER (
+            ORDER BY COUNT(*) DESC, u.name ASC
+        ) AS rn
+    FROM MovieRating mr
+    JOIN Users u
+        ON mr.user_id = u.user_id
+    GROUP BY u.user_id, u.name
+),
+
+movie_ranked AS (
+    SELECT
+        m.title,
+        ROW_NUMBER() OVER (
+            ORDER BY AVG(mr.rating) DESC, m.title ASC
+        ) AS rn
+    FROM MovieRating mr
+    JOIN Movies m
+        ON mr.movie_id = m.movie_id
+    WHERE mr.created_at >= '2020-02-01'
+      AND mr.created_at < '2020-03-01'
+    GROUP BY m.movie_id, m.title
 )
 
-, cte2 as 
-(
-select
-name,
-row_number() over(order by no_of_movies desc, name asc) as rnk
-from
-cte
-)
+SELECT name AS results
+FROM user_ranked
+WHERE rn = 1
 
+UNION ALL
 
-, cte3 as (
-select
-a.movie_id,
-b.title,
-avg(rating) as avg_rating
-from movierating a
-inner join movies b
-on a.movie_id = b.movie_id and a.created_at between "2020-02-01" and "2020-02-29"
-group by
-a.movie_id
-)
-
-, cte4 as 
-(
-select
-title,
-avg_rating,
-row_number() over(order by avg_rating desc, title asc) as rnk
-from
-cte3
-)
-
-select name as results from cte2 where rnk = 1
-union all
-select title as results from cte4 where rnk = 1
+SELECT title AS results
+FROM movie_ranked
+WHERE rn = 1;
