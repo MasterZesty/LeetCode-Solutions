@@ -7,4 +7,5 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 |  |
 | ------- |
 | [0574-winning-candidate](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0574-winning-candidate) |
+| [1159-market-analysis-ii](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1159-market-analysis-ii) |
 <!---LeetCode Topics End-->
