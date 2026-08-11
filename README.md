@@ -12,6 +12,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | [0180-consecutive-numbers](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0180-consecutive-numbers) |
 | [0574-winning-candidate](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0574-winning-candidate) |
 | [0612-shortest-distance-in-a-plane](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0612-shortest-distance-in-a-plane) |
+| [0614-second-degree-follower](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0614-second-degree-follower) |
 | [1159-market-analysis-ii](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1159-market-analysis-ii) |
 ## Nearest Pair of Points
 |  |
