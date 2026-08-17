@@ -15,6 +15,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | [0614-second-degree-follower](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0614-second-degree-follower) |
 | [1098-unpopular-books](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1098-unpopular-books) |
 | [1159-market-analysis-ii](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1159-market-analysis-ii) |
+| [1270-all-people-report-to-the-given-manager](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1270-all-people-report-to-the-given-manager) |
 ## Nearest Pair of Points
 |  |
 | ------- |
