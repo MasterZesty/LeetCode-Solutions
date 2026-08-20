@@ -18,6 +18,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | [1270-all-people-report-to-the-given-manager](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1270-all-people-report-to-the-given-manager) |
 | [1285-find-the-start-and-end-number-of-continuous-ranges](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1285-find-the-start-and-end-number-of-continuous-ranges) |
 | [1454-active-users](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1454-active-users) |
+| [1613-find-the-missing-ids](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/1613-find-the-missing-ids) |
 ## Nearest Pair of Points
 |  |
 | ------- |
