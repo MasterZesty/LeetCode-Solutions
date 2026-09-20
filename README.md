@@ -24,4 +24,12 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 |  |
 | ------- |
 | [0612-shortest-distance-in-a-plane](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/0612-shortest-distance-in-a-plane) |
+## String
+|  |
+| ------- |
+| [3498-reverse-degree-of-a-string](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/3498-reverse-degree-of-a-string) |
+## Simulation
+|  |
+| ------- |
+| [3498-reverse-degree-of-a-string](https://github.com/MasterZesty/LeetCode-Solutions/tree/master/3498-reverse-degree-of-a-string) |
 <!---LeetCode Topics End-->
